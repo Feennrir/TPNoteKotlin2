@@ -8,13 +8,9 @@ class Garage(private var vehicules: MutableList<Vehicule> = mutableListOf()) {
      */
     fun ajouterVehicule(vehicule: Vehicule) = vehicules.add(vehicule)
 
-    /**
-     * Affiche les détails de tous les véhicules du garage
-     */
+    /**Affiche les détails de tous les véhicules du garage*/
     fun afficherVehicules() = vehicules.forEach { it.afficherDetails() }
 
-    /**
-     * Fait klaxonner tous les véhicules du garage
-     */
+    /**Fait klaxonner tous les véhicules du garage*/
     fun faireKlaxonnerTousLesVehicules() = vehicules.forEach { it.klaxonner() }
 }
